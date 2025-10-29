@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ILLEGAL</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">ILLEGAL</div>
+    <nav>
+      <a href="#catalog">Коллекция</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+  </header>
+
+  <button class="cart-toggle">Корзина 🛒</button>
+
+  <div class="slider">
+    <div class="slides">
+      <div class="slide" style="background-image:url('images/slide1.jpg')"></div>
+      <div class="slide" style="background-image:url('images/slide2.jpg')"></div>
+      <div class="slide" style="background-image:url('images/slide3.jpg')"></div>
+    </div>
+    <div class="slider-buttons">
+      <button id="prev">&#10094;</button>
+      <button id="next">&#10095;</button>
+    </div>
+  </div>
+
+  <section class="catalog" id="catalog">
+    <div class="filters">
+      <div>
+        <label>Фильтр по категории:</label>
+        <select id="categoryFilter">
+          <option value="all">Все</option>
+          <option value="Футболка">Футболки</option>
+          <option value="Худи">Худи</option>
+          <option value="Джинсы">Джинсы</option>
+        </select>
+      </div>
+      <div>
+        <label>Сортировать:</label>
+        <select id="sortFilter">
+          <option value="name">По имени</option>
+          <option value="price">По цене</option>
+        </select>
+      </div>
+    </div>
+    <div class="products" id="products"></div>
+  </section>
+
+  <div class="cart" id="cart">
+    <h2>Корзина</h2>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-total" id="cart-total">Итого: 0₽</div>
+    <button id="checkout">Оформить заказ</button>
+  </div>
+
+  <footer id="contact">
+    <div>© 2025 ILLEGAL</div>
+<div class="socials">
+  <a href="#" class="instagram">Instagram</a>
+  <a href="#" class="tiktok">TikTok</a>
+  <a href="#" class="vk">VK</a>
+</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
